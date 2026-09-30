@@ -1,4 +1,4 @@
-name: Deploy Portfolio to github pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
@@ -8,6 +8,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/frontend/vitormanzano-portfolio
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -17,14 +21,14 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm ci
 
-      - name: Build project
+      - name: Build Project
         run: npx ng build --base-href "/portfolio/"
 
-      - name: Deploy to github pages
+      - name: Deploy to GitHub Pages
         uses: Peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/vitormanzano-portfolio-browser
+          publish_dir: ./src/frontend/vitormanzano-portfolio/dist/vitormanzano-portfolio/browser
