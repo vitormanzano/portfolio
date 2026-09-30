@@ -6,4 +6,7 @@
   color: var(--btn-text-color);
   background: rgb(82, 34, 208);
   background: linear-gradient(90deg, rgba(82, 34, 208, 1) 35%, rgba(255, 97, 150, 1) 100%);
+
+  border: none;
+  border-radius: 8px;
 }
