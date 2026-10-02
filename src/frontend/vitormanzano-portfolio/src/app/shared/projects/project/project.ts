@@ -20,7 +20,7 @@ export class Project {
       title: 'FitLink',
       tags: ['.Net 8', 'Server Java', 'MongoDB'],
       description:
-        'plicação para gerenciamento de treinos personalizados e séries, utilizando Web API RESTful para CRUD de usuários e instrutores.',
+        'Aplicação para gerenciamento de treinos personalizados e séries, utilizando Web API RESTful para CRUD de usuários e instrutores.',
       githubUrl: 'https://github.com/vitormanzano/FitLink-PI4-Turma2-18',
     },
     {
