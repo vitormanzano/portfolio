@@ -9,7 +9,7 @@ export const GITHUB_API_URL = 'https://api.github.com/users/vitormanzano/repos';
 export class Github {
   private httpClient = inject(HttpClient);
 
-  getRepos(): Observable<HttpResponse<Repository>> {
-    return this.httpClient.get<HttpResponse<Repository>>(GITHUB_API_URL);
+  getRepos(): Observable<Repository[]> {
+    return this.httpClient.get<Repository[]>(GITHUB_API_URL);
   }
 }
