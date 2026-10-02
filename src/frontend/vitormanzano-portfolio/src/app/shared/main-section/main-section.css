@@ -43,6 +43,7 @@ section h1 {
   .main-content {
     align-items: flex-start;
     max-width: 50%;
+    width: 646px;
   }
 
   section h1 {

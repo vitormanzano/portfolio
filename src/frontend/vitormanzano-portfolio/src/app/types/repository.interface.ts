@@ -1,6 +1,6 @@
 export interface Repository {
-  name: string;
+  title: string;
   description: string;
-  html_url: string;
-  languages_url: string;
+  tags: string[];
+  githubUrl: string;
 }

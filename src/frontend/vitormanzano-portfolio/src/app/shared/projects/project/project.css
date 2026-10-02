@@ -1,0 +1,54 @@
+.project-card {
+  display: block; /* Necessário pois a tag <a> é inline por padrão */
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  font-family: sans-serif;
+  text-decoration: none; /* Remove o sublinhado do link */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease; /* Suaviza a animação */
+}
+
+/* Efeito ao passar o mouse para indicar que é clicável */
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mantém as cores do texto definidas anteriormente, ignorando o azul padrão de links */
+.project-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  color: var(--project-title-color);
+  text-transform: uppercase;
+}
+
+/* (O restante do CSS para .tags, .tag e p continua exatamente igual) */
+/* Container das tags (Flexbox para alinhar horizontalmente) */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Espaçamento entre as tags[cite: 1] */
+  margin-bottom: 16px;
+}
+
+/* Estilo individual de cada tag */
+.tag {
+  background-color: #7c3aed; /* Fundo roxo[cite: 1] */
+  color: #ffffff; /* Texto branco[cite: 1] */
+  padding: 4px 8px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Texto em maiúsculas[cite: 1] */
+  border-radius: 2px;
+}
+
+/* Descrição */
+.project-card p {
+  margin: 0;
+  color: #52525b; /* Texto da descrição em tom cinza médio[cite: 1] */
+  line-height: 1.5;
+  font-size: 0.9rem;
+}

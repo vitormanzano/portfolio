@@ -4,6 +4,11 @@
 
 .wrapper {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 24px;
   color: var(--title-text-color);
+}
+
+.verticalline {
+  border-left: thick solid var(--vertical-line-color);
+  padding: 0px 10px 10px;
 }

@@ -1,4 +1,13 @@
 :host {
   --btn-text-color: #dbffff;
   --span-text-color: #151717;
+  --vertical-line-color: #5222d0;
+
+  /* Project */
+  --project-title-color: #151717;
+  --project-tag-color: #8455ff;
+  --project-tag-text-color: #dbffff;
+
+  --card-bg-color: #f4f4f5;
+  --project-desc-color: #52525b;
 }
